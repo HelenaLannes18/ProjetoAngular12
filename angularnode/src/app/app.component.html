@@ -1,0 +1,38 @@
+<div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-_XWlY_PddqyYQ66IDbpwAy7jna9d7u8&callback=initMap">
+</script>
+
+  <div id="map"  #mapELement ></div>
+
+
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <div class="w3-sidebar w3-bar-block w3-red" style="width:300px">
+    <div class="w3-sidebar w3-bar-block w3-blue" style="width:300px">
+      <h3 class="w3-bar-item">Menu</h3>
+      <a href="#" class="w3-bar-item w3-button">Empresas</a>
+      <a routerLink="empresas" class="w3-bar-item w3-button">Lista de Empresas</a>
+      <a routerLink="adicionar" class="w3-bar-item w3-button">Adicionar</a>
+    </div>
+
+
+
+    <a href="#" class="navbar-brand">Empresas</a>
+    <div class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="empresas" class="nav-link">Lista de Empresas Cadastradas</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="adicionar" class="nav-link">Adicionar</a>
+      </li>
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+
+  </div>
+</div>
+

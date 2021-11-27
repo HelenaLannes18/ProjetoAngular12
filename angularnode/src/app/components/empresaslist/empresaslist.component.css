@@ -1,0 +1,23 @@
+.list {
+  text-align: left;
+  max-width: 750px;
+  margin: auto;
+}
+
+.list li:hover {
+  color: white;
+  background-color: rgb(110, 110, 214);
+  left: .1em;
+}
+.list li.selected {
+  background-color: rgb(110, 110, 214);
+  color: white;
+}
+.list li.selected:hover {
+  background-color: rgb(110, 110, 214);
+  color: white;
+}
+.list li.selected:active {
+  background-color: rgb(110, 110, 214);
+  color: white;
+}

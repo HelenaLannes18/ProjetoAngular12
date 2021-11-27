@@ -1,0 +1,72 @@
+<div class="list row">
+  <div class="col-md-8">
+    <div class="input-group mb-3" >
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Procurar CNPJ"
+        name="search"
+        [(ngModel)]="cnpj"
+      />
+
+
+      <div class="input-group-append">
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          (click)="searchNome()"
+
+        >
+          Procurar
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6" >
+
+    <h4>Lista de Empresas </h4>
+    <h6>Clique em cada para mais detalhes </h6>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let empresa of empresas| filter:cnpj; let i = index"
+        [class.active]="i == empresaI"
+        (click)="setActiveTutorial(empresa, i)"
+      >
+        {{ empresa.nome }}
+      </li>
+    </ul>
+
+
+  </div>
+  <div class="col-md-6">
+    <div *ngIf="empresaT.id">
+      <h4>Empresa</h4>
+      <div>
+        <label ><strong>CNPJ:</strong></label> {{ empresaT.cnpj | mask:"CPF_CNPJ"}}
+      </div>
+      <div>
+        <label><strong>Nome:</strong></label> {{ empresaT.nome }}
+      </div>
+      <div>
+        <label><strong>Razão Social:</strong></label> {{ empresaT.razao }}
+      </div>
+      <div>
+        <label><strong>Endereço:</strong></label>
+        {{ empresaT.endereco }}
+      </div>
+      <div>
+        <label><strong>Atividade:</strong></label>
+        {{ empresaT.atividade}}
+      </div>
+
+
+
+     </div>
+    <div *ngIf="!empresaT">
+      <br />
+      <p>Clique em uma empresa</p>
+    </div>
+  </div>
+</div>
+
