@@ -9,30 +9,19 @@
 
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <div class="w3-sidebar w3-bar-block w3-red" style="width:300px">
-    <div class="w3-sidebar w3-bar-block w3-blue" style="width:300px">
-      <h3 class="w3-bar-item">Menu</h3>
-      <a href="#" class="w3-bar-item w3-button">Empresas</a>
-      <a routerLink="empresas" class="w3-bar-item w3-button">Lista de Empresas</a>
-      <a routerLink="adicionar" class="w3-bar-item w3-button">Adicionar</a>
-    </div>
+  <div class="sidebar">
 
-
-
-    <a href="#" class="navbar-brand">Empresas</a>
-    <div class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a routerLink="empresas" class="nav-link">Lista de Empresas Cadastradas</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="adicionar" class="nav-link">Adicionar</a>
-      </li>
-    </div>
+        <h3 class="menu">Menu</h3>
+        <a href="#" >Empresas</a>
+        <a routerLink="empresas">Lista de Empresas</a>
+        <a routerLink="adicionar">Adicionar</a>
+      </div>
   </div>
+
+
 
   <div class="container mt-3">
     <router-outlet></router-outlet>
 
   </div>
-</div>
 
