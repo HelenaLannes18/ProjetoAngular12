@@ -1,5 +1,4 @@
 import {AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
-import { google } from 'google-maps';
 
 
 declare const google: any;
