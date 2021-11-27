@@ -6,7 +6,7 @@ Desenvolvedores:
 
 ### Começando o projeto:
 - clone o repositorio
-- cd angular-desafio
+- cd angularnode
 - ng serve --port 8081
 - cd ../
 - cd server_node
